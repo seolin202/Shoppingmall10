@@ -5,5 +5,19 @@ router.get('/', (req, res) => {
         msg: "products data get"
     });
 });
-
+router.post('/', (req, res) => {
+    res.json({
+        msg: "products posting"
+    });
+});
+router.patch('/', (req, res) => {
+    res.json({
+        msg: "products updated"
+    });
+});
+router.delete('/', (req, res) => {
+    res.json({
+        msg: "products deleted"
+    });
+});
 module.exports = router;
